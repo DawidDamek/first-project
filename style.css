@@ -1,4 +1,60 @@
-h1 {
-  text-align: center; 
-  background-color: burlywood;
+body
+{
+  background-color: #1f2225 !important;
+	color: #efefef;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
 }
+
+.navbar
+{
+  opacity: 50%;
+}
+.navbar:hover
+{
+  background-color: #313131;
+}
+
+.list-group-item
+{
+  background-color: transparent;
+  color: #d8dee4;
+  margin-bottom: 40px;
+}
+
+.list-group-item:hover
+{
+  background-color: #d37172;
+  color: #d8dee4;
+}
+.list-group-item .active
+{
+  border-color: #d37172;
+}
+
+.BikeType
+{
+  float: left;
+  height: 331px;
+  border: 1px solid black;
+}
+
+.BikeType img
+{
+  max-height: 332px;
+  
+}
+
+.dark
+{
+  background-color: #262829;
+}
+
+.test
+{
+  border: 1px solid black;
+  height: 230px;
+}
+
+
+
