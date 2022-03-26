@@ -37,44 +37,76 @@
               <a class="nav-link" href="#">Pricing</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              <a class="nav-link dropdown-toggle" href="#bike-list" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Bike Types
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Enduro</a></li>
-                <li><a class="dropdown-item" href="#">Trail</a></li>
-                <li><a class="dropdown-item" href="#">Downhill</a></li>
+                <li>
+                  <a class="dropdown-item" href="#bike-list">
+                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
+                      aria-current="true" aria-label="Slide 1">
+                      Trail
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#bike-list">
+                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
+                      aria-current="true" aria-label="Slide 2">
+                      Enduro
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#bike-list">
+                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
+                      aria-current="true" aria-label="Slide 3">
+                      Freeride
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#bike-list">
+                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"
+                      aria-current="true" aria-label="Slide 4">
+                      Downhill
+                    </span>
+                  </a>
+                </li>
               </ul>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div>
+      <img class="img-fluid m-0" src="img/commenca.jpg" alt="commencal">
+    </div>
   </header>
 
-  <!---->
-  <figure>
-    <img class="img-fluid m-0" src="img/commenca.jpg" alt="commencal">
-  </figure>
 
-  <div class="weapon m-0">
-    <h1 class="weapon">CHOSE YOUR WEAPON</h1>
+  <div class="weapon scrolling-box m-0">
+    <h1 id="bike-list" class="weapon ">CHOSE YOUR WEAPON</h1>
   </div>
 
   <div class="col-sm-12 col-md-4 bike-type">
     <ul class="list-group list-group-flush ">
       <!---->
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="btn btn-dark active"
           aria-current="true" aria-label="Slide 1">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_trail.svg" alt="">
           Trail
         </span>
+
       </li>
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="active"
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="btn btn-dark"
           aria-current="true" aria-label="Slide 2">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_enduro.svg" alt="">
           Enduro
@@ -82,7 +114,7 @@
       </li>
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="active"
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="btn btn-dark btn"
           aria-current="true" aria-label="Slide 3">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_freeride.svg" alt="">
           Freeride
@@ -90,7 +122,7 @@
       </li>
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" class="active"
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" class="btn btn-dark"
           aria-current="true" aria-label="Slide 4">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_downhill.svg" alt="">
           Downhill
@@ -101,7 +133,7 @@
   </div>
 
   <div class="col-sm-12 col-md-8 bike-type">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="img-fluid mx-auto d-block" src="img/trail.png" class="d-block w-100" alt="enduro">
@@ -132,12 +164,18 @@
 
   <div style="clear: both;"></div>
 
-  <div class="test">
-    <img src="img/supremejpg.jpg" alt="commencal supreme">
-  </div>
+  <div class="parallax-image"></div>
 
   <div class="test">
     3D stem
+  </div>
+
+  <div class="test">
+    cards of parts
+  </div>
+
+  <div class="test">
+    prices and config table
   </div>
 
   <footer class="test">

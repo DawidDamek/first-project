@@ -5,6 +5,21 @@ body {
   font-size: 17px;
 }
 
+.primary {
+  background-color: #d37172;
+}
+
+.parallax-image {
+  background: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(img/supremejpg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
 .navbar {
   opacity: 70%;
   position: fixed;
@@ -13,7 +28,12 @@ body {
 }
 .navbar:hover {
   opacity: 90%;
-  background-color: #d37172 !important;
+  background-color: #111 !important;
+}
+
+.scrolling-box {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 .weapon {
@@ -35,6 +55,7 @@ h1.weapon {
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
+  border: none;
 }
 
 .list-group-item span {
@@ -49,14 +70,13 @@ h1.weapon {
   background-color: #d37172;
   color: #d8dee4;
 }
-.list-group-item .active {
-  border-color: #d37172;
+.list-group-item span:visited {
+  background-color: #d37172;
 }
 
 .bike-type {
   float: left;
   height: 331px;
-  border: 1px solid black;
 }
 
 .bike-type img {
@@ -75,4 +95,8 @@ h1.weapon {
 .type-image {
   height: 20px;
   width: 20px;
+}
+
+footer {
+  background-color: #000;
 }
