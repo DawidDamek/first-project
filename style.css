@@ -1,60 +1,78 @@
-body
-{
-  background-color: #1f2225 !important;
-	color: #efefef;
-  font-family: 'Open Sans', sans-serif;
+body {
+  background-color: #1f2225;
+  color: #efefef;
+  font-family: "Open Sans", sans-serif;
   font-size: 17px;
 }
 
-.navbar
-{
-  opacity: 50%;
+.navbar {
+  opacity: 70%;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
-.navbar:hover
-{
-  background-color: #313131;
+.navbar:hover {
+  opacity: 90%;
+  background-color: #d37172 !important;
 }
 
-.list-group-item
-{
+.weapon {
+  margin-top: 0px;
+  background-color: #111;
+  text-align: center;
+  padding: 10px;
+}
+
+h1.weapon {
+  font-size: 50px;
+  text-shadow: 2px 2px 1px #d37172;
+  font-family: "Orbitron", sans-serif;
+}
+
+.list-group-item {
   background-color: transparent;
   color: #d8dee4;
-  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: block;
 }
 
-.list-group-item:hover
-{
+.list-group-item span {
+  display: block;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+}
+
+.list-group-item span:hover {
   background-color: #d37172;
   color: #d8dee4;
 }
-.list-group-item .active
-{
+.list-group-item .active {
   border-color: #d37172;
 }
 
-.BikeType
-{
+.bike-type {
   float: left;
   height: 331px;
   border: 1px solid black;
 }
 
-.BikeType img
-{
+.bike-type img {
   max-height: 332px;
-  
 }
 
-.dark
-{
-  background-color: #262829;
+.bg-dark {
+  background-color: #000000;
 }
 
-.test
-{
+.test {
   border: 1px solid black;
   height: 230px;
 }
 
-
-
+.type-image {
+  height: 20px;
+  width: 20px;
+}

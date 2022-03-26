@@ -9,78 +9,111 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark>
-      <div class=" container-fluid">
-      <a class="navbar-brand" href="#">LOGO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Bike Types
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Enduro</a></li>
-              <li><a class="dropdown-item" href="#">Trail</a></li>
-              <li><a class="dropdown-item" href="#">Downhill</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ml-1" href="#"><img src="img/logopied.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Bike Types
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Enduro</a></li>
+                <li><a class="dropdown-item" href="#">Trail</a></li>
+                <li><a class="dropdown-item" href="#">Downhill</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
+  <!---->
   <figure>
-    <img class="img-fluid" src="img/commenca.jpg" alt="commencal">
+    <img class="img-fluid m-0" src="img/commenca.jpg" alt="commencal">
   </figure>
 
-  <div class="col-md-4 BikeType">
-    <h1 class="h3"></h1>
+  <div class="weapon m-0">
+    <h1 class="weapon">CHOSE YOUR WEAPON</h1>
+  </div>
+
+  <div class="col-sm-12 col-md-4 bike-type">
     <ul class="list-group list-group-flush ">
+      <!---->
       <li class="list-group-item">
         <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1">
+          <img class="type-image d-inline-block mr-1 align-top" src="img/icon_trail.svg" alt="">
           Trail
         </span>
       </li>
 
-      <li class="list-group-item"><span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
-          class="active" aria-current="true" aria-label="Slide 2">
+      <li class="list-group-item">
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="active"
+          aria-current="true" aria-label="Slide 2">
+          <img class="type-image d-inline-block mr-1 align-top" src="img/icon_enduro.svg" alt="">
           Enduro
-        </span></li>
-      <li class="list-group-item">Freeride</li>
-      <li class="list-group-item">Downhill</li>
+        </span>
+      </li>
+
+      <li class="list-group-item">
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="active"
+          aria-current="true" aria-label="Slide 3">
+          <img class="type-image d-inline-block mr-1 align-top" src="img/icon_freeride.svg" alt="">
+          Freeride
+        </span>
+      </li>
+
+      <li class="list-group-item">
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" class="active"
+          aria-current="true" aria-label="Slide 4">
+          <img class="type-image d-inline-block mr-1 align-top" src="img/icon_downhill.svg" alt="">
+          Downhill
+        </span>
+      </li>
+
     </ul>
   </div>
 
-  <div class="col-md-8 BikeType">
+  <div class="col-sm-12 col-md-8 bike-type">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="img-fluid mx-auto d-block" src="img/enduro.png" class="d-block w-100" alt="enduro">
+          <img class="img-fluid mx-auto d-block" src="img/trail.png" class="d-block w-100" alt="enduro">
         </div>
         <div class="carousel-item">
-          <img class="img-fluid mx-auto d-block" src="img/trail.png" class="d-block w-100" alt="trail">
+          <img class="img-fluid mx-auto d-block" src="img/enduro.png" class="d-block w-100" alt="trail">
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid mx-auto d-block" src="img/freeride.png" class="d-block w-100" alt="trail">
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid mx-auto d-block" src="img/downhill.png" class="d-block w-100" alt="trail">
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -100,7 +133,7 @@
   <div style="clear: both;"></div>
 
   <div class="test">
-    scrollable photo
+    <img src="img/supremejpg.jpg" alt="commencal supreme">
   </div>
 
   <div class="test">
