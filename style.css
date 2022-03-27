@@ -41,6 +41,8 @@ body {
   background-color: #111;
   text-align: center;
   padding: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 h1.weapon {
@@ -97,6 +99,21 @@ h1.weapon {
   width: 20px;
 }
 
+.parts-container img {
+  height: 250px;
+}
+
 footer {
   background-color: #000;
+}
+
+.abc {
+  width: 18rem;
+}
+
+.blitz {
+  height: 40px;
+}
+.skull {
+  height: 100px;
 }

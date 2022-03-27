@@ -20,7 +20,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand ml-1" href="#"><img src="img/logopied.png" alt="logo"></a>
+        <a class="navbar-brand ml-1" href="#main-img"><img src="img/logopied.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#main-img">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -83,19 +83,19 @@
       </div>
     </nav>
 
-    <div>
+    <div id="main-img">
       <img class="img-fluid m-0" src="img/commenca.jpg" alt="commencal">
     </div>
   </header>
 
 
-  <div class="weapon scrolling-box m-0">
-    <h1 id="bike-list" class="weapon ">CHOSE YOUR WEAPON</h1>
+  <div class="weapon m-0">
+    <h1 id="bike-list" class="weapon ">CHOOSE YOUR WEAPON</h1>
   </div>
 
-  <div class="col-sm-12 col-md-4 bike-type">
+  <div class="col-12 col-md-4 bike-type">
     <ul class="list-group list-group-flush ">
-      <!---->
+
       <li class="list-group-item">
         <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="btn btn-dark active"
           aria-current="true" aria-label="Slide 1">
@@ -132,7 +132,7 @@
     </ul>
   </div>
 
-  <div class="col-sm-12 col-md-8 bike-type">
+  <div class="col-12 col-md-8 bike-type">
     <div id="carouselExampleControls" class="carousel slide" data-interval="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -166,23 +166,92 @@
 
   <div class="parallax-image"></div>
 
+  <div class="weapon">
+    <img class="blitz" src="img/blitz.png" alt="">
+    Adjust Your ride with custom parts
+    <img class="blitz" src="img/blitz.png" alt="">
+  </div>
+
   <div class="test">
     3D stem
   </div>
 
-  <div class="test">
-    cards of parts
+  <div class="weapon mb-4 p-1">
+    no compromises on components
+    <img class="skull" src="img/home_rc_iconlogo.svg" alt="">
   </div>
 
-  <div class="test">
-    prices and config table
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+
+    <div class="col">
+      <div class="card bg-dark abc">
+        <img src="img/foxshox.png" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Suspension</h5>
+          <p class="card-text">Very expensive, very premium, and at least the same quality suspensian made by FOX</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark abc">
+        <img src="img/foxshox.png" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Suspension</h5>
+          <p class="card-text">Very expensive, very premium, and at least the same quality suspensian made by FOX</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card bg-dark abc">
+        <img src="img/foxshox.png" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Suspension</h5>
+          <p class="card-text">Very expensive, very premium, and at least the same quality suspensian made by FOX</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div>
+    <p class="weapon">money</p>
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Type</th>
+          <th scope="col">Spec</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Trail</th>
+          <td>Top</td>
+          <td>3000$</td>
+        </tr>
+        <tr>
+          <th scope="row">Enduro</th>
+          <td>Top</td>
+          <td>4000$</td>
+        </tr>
+        <tr>
+          <th scope="row">Freeride</th>
+          <td>Top</td>
+          <td>4399$</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <footer class="test">
     footer
-  </footer>
 
-  <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
