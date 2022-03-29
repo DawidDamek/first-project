@@ -72,7 +72,14 @@ h1.weapon {
   background-color: #d37172;
   color: #d8dee4;
 }
-.list-group-item span:visited {
+
+span.type-list {
+  text-align: center;
+  border-radius: 5px;
+  background-color: #212529;
+}
+
+span.active {
   background-color: #d37172;
 }
 
@@ -246,4 +253,8 @@ model-viewer {
 
 #custom-part {
   text-align: center;
+}
+
+.box {
+  display: flex;
 }
