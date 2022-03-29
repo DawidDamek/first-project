@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fontello.css" type="text/css">
+
+  <script src="https://kit.fontawesome.com/f48bee00f8.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -31,10 +34,10 @@
               <a class="nav-link active" aria-current="page" href="#main-img">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#price">Pricing</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#bike-list" id="navbarDropdownMenuLink" role="button"
@@ -166,7 +169,7 @@
 
   <div class="parallax-image"></div>
 
-  <div class="weapon">
+  <div id="features" class="weapon">
     <img class="blitz" src="img/blitz.png" alt="">
     Adjust Your ride with custom parts
     <img class="blitz" src="img/blitz.png" alt="">
@@ -176,39 +179,39 @@
     3D stem
   </div>
 
-  <div class="weapon mb-4 p-1">
+  <div class="weapon mb-2 p-1">
     no compromises on components
     <img class="skull" src="img/home_rc_iconlogo.svg" alt="">
   </div>
 
-  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+  <div class="row row-cols-1 row-cols-sm-3 g-4 mb-2 p-5">
 
     <div class="col">
       <div class="card bg-dark abc">
-        <img src="img/foxshox.png" class="card-img-top img-fluid" alt="...">
+        <img src="img/foxshox.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Suspension</h5>
-          <p class="card-text">Very expensive, very premium, and at least the same quality suspensian made by FOX</p>
+          <p class="card-text">Very expensive, very premium, and gratest quality</p>
         </div>
       </div>
     </div>
 
     <div class="col">
       <div class="card bg-dark abc">
-        <img src="img/foxshox.png" class="card-img-top img-fluid" alt="...">
+        <img src="img/foxshox.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Suspension</h5>
-          <p class="card-text">Very expensive, very premium, and at least the same quality suspensian made by FOX</p>
+          <p class="card-text">Very expensive, very premium, and gratest quality</p>
         </div>
       </div>
     </div>
 
     <div class="col">
       <div class="card bg-dark abc">
-        <img src="img/foxshox.png" class="card-img-top img-fluid" alt="...">
+        <img src="img/foxshox.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Suspension</h5>
-          <p class="card-text">Very expensive, very premium, and at least the same quality suspensian made by FOX</p>
+          <p class="card-text">Very expensive, very premium, and gratest quality</p>
         </div>
       </div>
     </div>
@@ -217,14 +220,19 @@
 
 
 
-  <div>
-    <p class="weapon">money</p>
-    <table class="table table-dark table-hover">
+  <div id="price">
+    <p class="weapon">
+      <i class="fa-solid fa-sack-dollar mr-4"></i>
+      money
+      <i class="fa-solid fa-sack-dollar ml-4"></i>
+    </p>
+    <table class=" mx-auto table table-dark table-hover">
       <thead>
         <tr>
           <th scope="col">Type</th>
           <th scope="col">Spec</th>
           <th scope="col">Price</th>
+          <th scope="col" class="align-right"><i class="icon-basket"></i></th>
         </tr>
       </thead>
       <tbody>
@@ -232,26 +240,79 @@
           <th scope="row">Trail</th>
           <td>Top</td>
           <td>3000$</td>
+          <td><span class="btn btn-success">Add to cart</span></td>
         </tr>
         <tr>
           <th scope="row">Enduro</th>
           <td>Top</td>
           <td>4000$</td>
+          <td><span class="btn btn-success">Add to cart</span></td>
         </tr>
         <tr>
           <th scope="row">Freeride</th>
           <td>Top</td>
           <td>4399$</td>
+          <td><span class="btn btn-success">Add to cart</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Downhill</th>
+          <td>Top</td>
+          <td>5299$</td>
+          <td><span class="btn btn-success">Add to cart</span></td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <footer class="test">
-    footer
+  <div class="parallax-image-footer"></div>
+
+  <div id="service">
+    <p class="d-inline-block col-12 col-sm-3"><i class="fa-solid fa-handshake-simple"></i> <span
+        class="d-block">lifetime
+        warranty</span> </p>
+    <p class="d-inline-block col-12 col-sm-3"><i class="fa-solid fa-hand-holding-heart"></i><span class="d-block">Crash
+        replacement</span></p>
+    <p class="d-inline-block col-12 col-sm-3"><i class="fa-solid fa-heart-pulse"></i><span class="d-block">Online
+        service</span>
+    </p>
+
+  </div>
+
+  <div id="newsletter" class="align-stretch">
+
+    <div id="socials" class="col-12 col-sm-6">
+      <p>get in touch:</p>
+      <p>
+        <a href="#"><i class="icon-facebook"></i></a>
+        <a href="#"><i class="icon-instagram"></i></a>
+        <a href="#"><i class="icon-youtube-play"></i></a>
+      </p>
+    </div>
+
+    <div id="form" class="col-12 col-sm-6 mt-5 mb-5">
+      <p>Newsletter</p>
+      <form>
+        <input type="text" placeholder="email" onfocus="this.placeholder=''" onblur="this.placeholder='email'">
+
+        <input class="d-block mx-auto" type="submit" value="SUBSCRIBE">
+
+      </form>
+    </div>
+
+    <div style="clear: both;"></div>
+  </div>
+
+  <footer>
+    <div>
+      <img class="d-inline-block p-3" src="img/icon-mastercard.png" alt="mastercard">
+      <img class="d-inline-block p-3" src="img/icon-paypal.png" alt="paypal">
+    </div>
+    <p class="information"> &copy; Site developed by Dawid Damek with usage of YT industries and Commencal marketing
+      materials</p>
+  </footer>
 
 
-    <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
