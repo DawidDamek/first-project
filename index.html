@@ -50,7 +50,7 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
                   <a class="dropdown-item active" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
-                  aria-current="true" aria-label="Slide 1">
+                  aria-current="true" aria-label="Slide 1" onclick=scrollToBikeList()>
                     <span type="button">
                       Trail
                     </span>
@@ -58,7 +58,7 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
-                  aria-current="true" aria-label="Slide 2">
+                  aria-current="true" aria-label="Slide 2" onclick=scrollToBikeList()>
                     <span type="button">
                       Enduro
                     </span>
@@ -67,7 +67,7 @@
 
                 <li>
                   <a class="dropdown-item" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
-                  aria-current="true" aria-label="Slide 3">
+                  aria-current="true" aria-label="Slide 3" onclick=scrollToBikeList()>
                     <span type="button" >
                       Freeride
                     </span>
@@ -76,7 +76,7 @@
 
                 <li>
                   <a class="dropdown-item" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"
-                  aria-current="true" aria-label="Slide 4">
+                  aria-current="true" aria-label="Slide 4" onclick=scrollToBikeList()>
                     <span type="button">
                       Downhill
                     </span>
@@ -338,6 +338,11 @@
         })
       })
     })
+
+    const scrollToBikeList = () => {
+      const bikeListElement = document.querySelector('#bike-list');
+      bikeListElement.scrollIntoView()
+    }
   </script>
 
 </body>
