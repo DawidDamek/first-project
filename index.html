@@ -42,42 +42,42 @@
             <li class="nav-item">
               <a class="nav-link" href="#price">Pricing</a>
             </li>
-            <li class="nav-item dropdown">
+            <li id="bikes-dropdown-carousel" class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#bike-list" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Bike Types
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li>
-                  <a class="dropdown-item" href="#bike-list">
-                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
-                      aria-current="true" aria-label="Slide 1">
+                  <a class="dropdown-item active" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
+                  aria-current="true" aria-label="Slide 1">
+                    <span type="button">
                       Trail
                     </span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#bike-list">
-                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
-                      aria-current="true" aria-label="Slide 2">
+                  <a class="dropdown-item" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"
+                  aria-current="true" aria-label="Slide 2">
+                    <span type="button">
                       Enduro
                     </span>
                   </a>
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="#bike-list">
-                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
-                      aria-current="true" aria-label="Slide 3">
+                  <a class="dropdown-item" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"
+                  aria-current="true" aria-label="Slide 3">
+                    <span type="button" >
                       Freeride
                     </span>
                   </a>
                 </li>
 
                 <li>
-                  <a class="dropdown-item" href="#bike-list">
-                    <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"
-                      aria-current="true" aria-label="Slide 4">
+                  <a class="dropdown-item" href="#bike-list" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"
+                  aria-current="true" aria-label="Slide 4">
+                    <span type="button">
                       Downhill
                     </span>
                   </a>
@@ -99,11 +99,11 @@
     <h1 id="bike-list" class="weapon ">CHOOSE YOUR WEAPON</h1>
   </div>
 
-  <div class="col-12 col-md-4 bike-type">
+  <div id="bikes-list-carousel" class="col-12 col-md-4 bike-type">
     <ul class="list-group list-group-flush ">
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="type-list"
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="type-list active"
           aria-current="true" aria-label="Slide 1">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_trail.svg" alt="">
           Trail
@@ -111,31 +111,28 @@
       </li>
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="type-list"
-          aria-current="true" aria-label="Slide 2">
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="type-list" aria-label="Slide 2">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_enduro.svg">
           Enduro
         </span>
       </li>
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="type-list active"
-          aria-current="true" aria-label="Slide 3">
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" class="type-list" aria-label="Slide 3">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_freeride.svg">
           Freeride
         </span>
       </li>
 
       <li class="list-group-item">
-        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" class="type-list"
-          aria-current="true" aria-label="Slide 4">
+        <span type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" class="type-list" aria-label="Slide 4">
           <img class="type-image d-inline-block mr-1 align-top" src="img/icon_downhill.svg">
           Downhill
         </span>
       </li>
 
     </ul>
-  </div>
+  </div>  
 
   <div class="col-12 col-md-8 bike-type">
     <div id="carouselExampleControls" class="carousel slide" data-interval="false">
@@ -321,26 +318,26 @@
   <script src="js/bootstrap.min.js"></script>
 
   <script>
-    var elements = document.getElementsByClassName("type-list");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].onclick = function () {
+    const myCarousel = document.getElementById('carouselExampleControls')
 
-        // remove class from sibling
+    myCarousel.addEventListener('slide.bs.carousel', function (customEvent) {
+      const numberToSlide = customEvent.to;
+      const dropdownElements =  document.querySelector('#bikes-dropdown-carousel').querySelectorAll('a')
+      const listElements =  document.querySelector('#bikes-list-carousel').querySelectorAll('span')
+      const indicatorContainers = [dropdownElements, listElements];
+      
+      indicatorContainers.forEach((listOfElements) => {
+        listOfElements.forEach((element) => {
+          const dataBsSlideTo = parseInt(element.getAttribute('data-bs-slide-to'));
 
-        var el = elements[0];
-        while (el) {
-          if (el.tagName === "span") {
-            //remove class
-            el.classList.remove("active");
-
+          if (dataBsSlideTo === numberToSlide) {
+            element.classList.add('active');
+          } else {
+            element.classList.remove('active');
           }
-          // pass to the new sibling
-          el = el.nextSibling;
-        }
-
-        this.classList.add("active");
-      };
-    }
+        })
+      })
+    })
   </script>
 
 </body>
